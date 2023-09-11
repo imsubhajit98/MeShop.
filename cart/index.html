@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Cart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="../navbar.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- header Design -->
+  <header class="header">
+    <div class="part1">
+      <a href="../index.html" class="logo">
+        <!-- <img src="" alt=""> -->
+        <h4>MeShop.</h4>
+      </a>
+      <!-- <i class="fa-solid fa-bars" id="menu-icon"></i> -->
+      <i class="fa-solid fa-bars-staggered" id="menu-icon"></i>
+    </div>
+
+    <div class="navbar active hide">
+      <a class="navLink" href="../index.html">Home</a>
+      <a class="navLink" href="../shop/index.html">Shop</a>
+      <a class="navLink" href="../cart/index.html">My Cart</a>
+      <a class="navLink" href="../profile/index.html">Profile</a>
+      <a class="nav-btn" href="../login/index.html">Login</a>
+      <a class="nav-btn" href="../signup/index.html">Signup</a>
+    </div>
+  </header>
+
+
+
+  <!-- cart container -->
+  <div class="cart-heading">
+    My Cart
+  </div>
+
+  <div class="container">
+    <div class="items"></div>
+    <div style="padding: 2rem" class="right">
+      <h2> Checkout List</h2>
+      <div class="list-item">
+        <div class="list-container"></div>
+        <div style="
+              display: flex;
+              justify-content: space-between;
+              padding: 10px 0;
+              border-top: 1px solid white;
+              border-bottom: 1px solid white;
+            ">
+          <div>Total</div>
+          <div id="total-price"></div>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center; margin-top: 20px">
+        <button id="rzp-button1" style="height: 40px; padding: 10px; width: 100%; cursor: pointer">
+          Checkout
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../navbar.js"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

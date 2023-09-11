@@ -1,0 +1,136 @@
+/*----------------------------  Navbar -------------------------------------*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #526BEA;
+    
+  }
+  
+  .header .sticky {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+    cursor: default;
+  }
+  
+  .navbar a {
+    font-size: 1rem;
+    color: white;
+    margin-left: 2rem;
+    transition: 0.3s;
+    
+    
+  }
+  
+
+  
+  #menu-icon {
+    font-size: 4.6rem;
+    color: white;
+    display: none;
+  }
+  
+  .nav-btn {
+    background-color: #ffc400;
+    color: var(--bg-color) !important;
+    padding: 6px 8px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-weight: 600;
+  }
+  
+  .navbar {
+    /* position: relative;
+    display: inline-block; */
+  }
+  .navbar a{
+    position: relative;
+  }
+  .navbar .navLink::after {
+       content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #ffc400;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transition: all 0.5s linear;
+
+  }
+  .navbar .navLink:hover::after {
+    width: 100%;
+  }
+  
+
+
+
+
+  /* responsive */
+  @media (max-width: 850px) {
+    html {
+      font-size: 60%;
+    }
+    .header {
+      display: flex;
+      flex-direction: column;
+    }
+    .part1 {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .hide {
+      display: none;
+    }
+  
+    #menu-icon {
+      display: block;
+      font-size: 2.6rem;
+    }
+  
+    .logo {
+      font-size: 1.5rem;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: #000000f7;
+      border-top: 0.1rem solid rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+      /* display: none; */
+    }
+  
+    .navbar .active {
+      display: block;
+    }
+  
+    .navbar a {
+      display: block;
+      font-size: 2rem;
+      margin: 2rem 0rem;
+      padding: 1rem;
+    }
+    .navbar .navlink:hover {
+      background: #f2f1f1;
+    }
+}
