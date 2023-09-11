@@ -3,12 +3,13 @@
 ## Following Overview
 1. A user can sign up and then login 
 2. Without login can't visit shop product page
-3. Here any can access few featuers like rating, searching product, specific catagory
-4. After all activity user can add to cart from shoping page
-5. The user can go cart page and see total carted product and total amount also
-6. After all of thing most exciting features user can payment through Razorpay gateway
-7. All payment is totally dummy and then automatically remove cart item
-8. And again same process for shoping any product 
+3. User can edit own username and password also
+4. Here any can access few featuers like rating, searching product, specific catagory
+5. After all activity user can add to cart from shoping page
+6. The user can go cart page and see total carted product and total amount also
+7. After all of thing most exciting features user can payment through Razorpay gateway
+8. All payment is totally dummy and then automatically remove cart item
+9. And again same process for shoping any product 
 
 
 ## Technical Overview
